@@ -1,4 +1,5 @@
 ---
+layout: default
 title: SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description
 ---
 
