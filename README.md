@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description
+title: SpeechCraft A Fine-Grained Expressive Speech Dataset with Natural Language Description
 ---
 
 ### Hi there 👋
