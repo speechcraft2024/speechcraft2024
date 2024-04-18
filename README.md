@@ -15,11 +15,7 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 | Style Prompt | Word Emphasis | Audio (Description Version) | Audio (Instruction Version) |
 |:-------------|:------------- |:------------------|:------------------|
-| Speaking with a natural tone and at a normal speed, a young girl with normal pitch and low volume says, "'It is a story,' Sara would answer.", adding a touch of charm to the conversation, highlighting "story" with pronounced emphasis. |story| <audio controls><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/0417.wav" type="audio/mpeg"></audio> |
-| In an environment where naturalness rules, a calm adult male with normal pitch and low volume speaks rapidly, expressing: "That was something over thirteen years ago.", projecting "years" with significant stress. |years| <audio controls><source src="./userstudy/1/infer-vocos-0429.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/0429.wav" type="audio/mpeg"></audio> |
-| A youthful male with normal pitch and low volume explosively states, "Here I can cheaply purchase a delicious self-approval." He speaks rapidly in a natural manner, drawing attention to "self" by stressing it significantly. |self| <audio controls><source src="./userstudy/1/0440.wav" type="audio/mpeg"></audio> |  <audio controls><source src="./userstudy/1/infer-vocos-0440.wav" type="audio/mpeg"></audio> |
-| A fast-paced conversation with a youth female with low pitch and low volume: "Were you born in Spain, Pablo?", uttering "Spain" with particular stress. |Spain| <audio controls><source src="./userstudy/1/0502.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/infer-vocos-0502.wav" type="audio/mpeg"></audio> |
-
+| Speaking with a natural tone and at a normal speed, a young girl with normal pitch and low volume says, "'It is a story,' Sara would answer.", adding a touch of charm to the conversation, highlighting "story" with pronounced emphasis. | story | <audio controls><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg"></audio> |
 
 ### Header 3
 
