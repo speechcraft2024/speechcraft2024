@@ -49,7 +49,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 | <audio controls><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg"></audio> | 语气中充满了惊讶，心情分外的愉悦，强压制住心中的喜悦。 | 声音充满了好奇，语气中带着小心翼翼的期待。 | 一位年轻女性，音调高亢，语速适中，带着疑惑和不解的情绪说|
 | <audio controls><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg"></audio> | 事事埋怨的感觉 | 很会的样子 | 一名年轻男性，音调高亢，语速快，愤怒地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg"></audio> | 语调欢快活泼，抑扬顿挫，内心充满惊讶和好奇 | 语调平缓，询问的口吻，流露了疑惑和不解 | 一个年轻女性，音调适中，语速较快，抑扬顿挫地说。|
-| <audio controls><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg"></audio> | 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
+| <audio controls><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg"></audio> | 语气先是急切的，然后转变为迟疑和结结巴巴。｜ 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg"></audio> | 心里面满是自责，言语中充满着不愉快，非常的伤心 | 言辞恳切，语气哀伤，心情悲痛 | 一个年轻女性，音调高亢，语速适中，带着不悦的情绪说。|
 | <audio controls><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg"></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|         
 
