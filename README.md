@@ -3,11 +3,34 @@
 SpeechCraft is a large-scale expressive bilingual speech dataset with natural language descriptions resulting from an automatic speech annotation system.
 It encompasses over 2,000,000 audio clips annotated with two versions of text prompts, called speech Descriptions (exclude transcript) and speech Instructions (include transcript).
 
-We are planning to open source SpeechCraft, making it the laregest natural language stylistic dataset that encompass the most fine-grained attributes and the most diverse natural language descriptions available.
+We are planning to open source SpeechCraft, making it the laregest natural language stylistic dataset that encompass the most fine-grained attributes and most diverse natural language descriptions available.
 
+## SpeechCraft Dataset Observation
+### Examples of the speech Descriptions compared with TextrolSpeech
+| Audio | Text | TextrolSpeech | Speech Descriptions |
+|:-------------|:-------------|:------------------|:------------------|
+| <audio controls><source src="./userstudy/2/part2/029.wav" type="audio/mpeg"></audio> |The revolution now under way in materials handling makes this much easier. | The mad male voice is slow and deliberate, with a deep and authoritative pitch. | Speaking with a low pitch and normal volume, a young male with an angry emotion says. His speech is swift yet creating a thought-provoking atmosphere."|
+| <audio controls><source src="./userstudy/2/part2/0019_001634.wav" type="audio/mpeg"></audio> |"Hurry up, hurry up!" | Speaking slowly with a high tone, she articulates her amazed words with normal energy. | Urging something with urgency, a surprised teenage female with a high pitch and normal volume impatiently asks.
+| <audio controls><source src="./userstudy/2/part2/016.wav" type="audio/mpeg"></audio> | A few years later the dome fell in. | Speaking rapidly and in a normal pitch, the mad man's energy during communication is low. | In a terse and furious tone, a high-pitched teenager with a normal volume and fast speech says. This conversation revolves around a topic related to time, as the speaker expresses their anger.|
+| <audio controls><source src="./userstudy/2/part2/0019_001170.wav" type="audio/mpeg"></audio> |Our King George is labourers. | Her low-energy voice carried her sad words gradually, maintaining a normal pitch. |Speaking slowly and plaintively, a woman remarks. With a normal pitch and low volume, she emphasizes the significance of this statement.|
+| <audio controls><source src="./userstudy/2/part2/0012_000590.wav" type="audio/mpeg"></audio> | Both side were softly curved. | The man's high-pitched voice resonates through his angry slow-paced speech with regular energy. | Engrossed in an angry conversation, a young boy with a high pitch and a normal volume declares. He is energetic and spoken rapidly, but his heart is heavy with frustration.|
 
-# Experimental Results
-## Experimental Results for Expressive Speech Synthesis
+### Examples of the speech Instructions
+| Audio | Speech Instructions |
+|:-------------|:-------------|
+| <audio controls><source src="./userstudy/6/AUD0000001036_S0002432.wav" type="audio/mpeg"></audio> | Entertaining us with her storytelling skills, a natural youth female with high pitch and normal volume speaks rapidly, enthralling us:\"COME INTO THE WATER, MARCUS, SAID JEAN PEREMPTORILY, AS SHE PUT HER FOOT AGAINST THE EDGE OF THE RAFT.\" |
+| <audio controls><source src="./userstudy/6/AUD0000001148_S0000872.wav" type="audio/mpeg"></audio> | \"IS IT NOT THAT IT IS THEIR FASHION OF INVESTING THEMSELVES WITH IMPORTANCE?\" This audiobook features a calm, steady-paced speaking male adult with a low pitch and high volume, reflecting on the style of investing. |
+| <audio controls><source src="./userstudy/6/POD0000008941_S0000476.wav" type="audio/mpeg"></audio> | Reflecting on a topic in the fields of Health and Fitness, a sad youth with low pitch and normal volume states, \"WELL, YOU KNOW, LIFE IS HOLISTIC, DAVE.\" She speaks at a fast pace, signifying her sadness. |
+| <audio controls><source src="./userstudy/6/POD0000009426_S0000120.wav" type="audio/mpeg"></audio> | Expressing happiness, a high-pitched and high-volume female teenager speaker enthusiastically states, \"AND IT'S VERY, VERY IMPORTANT TO ME THAT OUR FAMILY DOESN'T OPERATE LIKE THAT.\" in a fast-paced manner. Speaking in the context of News and Politics, she reflects upon a particular topic, expressing excitement about her words. |
+| <audio controls><source src="./userstudy/6/YOU0000012901_S0000187.wav" type="audio/mpeg"></audio> | Expressing joy in the context of Entertainment, a happy adult male with normal pitch and volume speaks rapidly and says, \"I SAYS, I ENJOYED YOUR FILM. THAT'S WHY.\" His words reflect a positive attitude and amiable mood. |
+| <audio controls><source src="./userstudy/6/train_SSB05990298.wav" type="audio/mpeg"></audio> | “这个铜牌可以当作生日礼物。”这位年轻女士的音调中等，音量低沉，语速很快。她的语气中透露着内心的自信，还有些得意。 |
+| <audio controls><source src="./userstudy/6/train_SSB01120308.wav" type="audio/mpeg"></audio> |“很多著名的流行音乐歌星都因使用毒品而毁了自己。”这位少年女性的音调中等，音量适中，语速很快，语气坚定，语气中带着怀疑和不相信的态度。 |
+| <audio controls><source src="./userstudy/6/train_SSB06030260.wav" type="audio/mpeg"></audio> | 男孩的声音很低沉，语气很认真，语气比较平静，有点内敛的感觉，用较高的音量，以较快的语速说：“自被列入十二五规划后。”|
+| <audio controls><source src="./userstudy/6/train_SSB03540311.wav" type="audio/mpeg"></audio> | 一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说：“全年将有望突破三千亿。”|
+| <audio controls><source src="./userstudy/6/train_SSB04340429.wav" type="audio/mpeg"></audio> | 中年男子高分贝，快速地高声说道：“中证房天下大数据指数的推出。”他充满兴奋的语气，反映出他对这个话题话题热衷的态度。|
+
+## Experimental Results
+### Experimental Results for Expressive Speech Synthesis (Please refer to Paper Section 5.1)
 
 | Style Prompt | Text | Audio (TextrolSpeech) | Audio (SpeechCraft Description Version) |
 |:-------------|:-------------|:------------------|:------------------|
@@ -24,12 +47,17 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 | With a low pitch and high energy, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his joy and excitement. This falls under the category of Education. | He was blowing excitedly and running his fingers through his hair. | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg"></audio> |
 
 
-<!-- | The despair woman's voice resonated slowly, her miserable energy remaining low, pitch high. | Racism has no place in any sport. | <audio controls><source src="./userstudy/5/4_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0103.wav" type="audio/mpeg"></audio> |
-| A boy said in a desperate voice. | One even gave my little dog a biscuit. | <audio controls><source src="./userstudy/5/5_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0104.wav" type="audio/mpeg"></audio> |
-| The despair woman's voice resonated slowly, her miserable energy remaining low, pitch high. | One even gave my little dog a biscuit. | <audio controls><source src="./userstudy/5/6_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0105.wav" type="audio/mpeg"></audio> | -->
-<!-- | The despair woman's high-pitched voice carried a slow yet energetic speech. | Racism has no place in any sport. | <audio controls><source src="./userstudy/5/2_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0101.wav" type="audio/mpeg"></audio> | -->
-<!-- | With heightened volume, she conveys her high energy. | A doctor believes this boy to be mad. | <audio controls><source src="./userstudy/5/12_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/012.wav" type="audio/mpeg"></audio> | -->
-## Experimental Results for Fine-Grained Speech Emphasis Control
+### Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
+
+| Style Prompt | Word Emphasis | Audio (Instruction Version) |
+|:-------------|:------------- |:------------------|
+|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Waitress" by stressing it significantly.| Waitress | <audio controls><source src="./userstudy/1/5002.wav" type="audio/mpeg"></audio> |
+|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Wealthy" by stressing it significantly.| Wealthy | <audio controls><source src="./userstudy/1/6002.wav" type="audio/mpeg"></audio> |
+|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Woodsman" by stressing it significantly.| Woodsman | <audio controls><source src="./userstudy/1/8002.wav" type="audio/mpeg"></audio> |
+<!-- <div style="text-align: center;">
+  ![Mel-spectrogram](./userstudy/1/Mel_Case_Study.png "Mel-spectrogram")
+</div> -->
+<img src="./userstudy/1/Mel_Case_Study.png" alt="Mel-spectrogram" title="Mel-spectrogram">
 
 | Style Prompt | Word Emphasis | Audio (Description Version) | Audio (Instruction Version) |
 |:-------------|:------------- |:------------------|:------------------|
@@ -42,14 +70,14 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 | 一位青年男性，声音中等音量，音调中等，语气充满愤怒的发怒，毫不留情地说：“男人哭吧不是罪。”，在“男人”这个词上特别强调。 | 男人 | <audio controls><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1053.wav" type="audio/mpeg"></audio> |
 | 年轻女孩的音调很高，音量也非常高，更快速的说出：“如果当时没被抱错。”她的声音中透露着一种不耐烦的情感，在“被”字上进行了强调发音。 | 被 | <audio controls><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1526.wav" type="audio/mpeg"></audio> |
 
-## Experimental Results for Automated Speech Style Captioning
+### Experimental Results for Automated Speech Style Captioning (Please refer to Paper Section 5.3)
 | Audio | Human Annotation from SECap | SECap Caption | Ours | 
 |:-------------|:------------- |:------------------|:------------------|
 | <audio controls><source src="./userstudy/4/tx_emotion_00203000086.wav " type="audio/mpeg"></audio> | 心情喜悦无比，兴高采烈 | 感到幸福和欢喜 | 一名年轻女性，音调高亢，语速很快，情绪中透露着喜悦和欢喜。|
 | <audio controls><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg"></audio> | 语气中充满了惊讶，心情分外的愉悦，强压制住心中的喜悦。 | 声音充满了好奇，语气中带着小心翼翼的期待。 | 一位年轻女性，音调高亢，语速适中，带着疑惑和不解的情绪说|
 | <audio controls><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg"></audio> | 事事埋怨的感觉 | 很会的样子 | 一名年轻男性，音调高亢，语速快，愤怒地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg"></audio> | 语调欢快活泼，抑扬顿挫，内心充满惊讶和好奇 | 语调平缓，询问的口吻，流露了疑惑和不解 | 一个年轻女性，音调适中，语速较快，抑扬顿挫地说。|
-| <audio controls><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg"></audio> | 语气先是急切的，然后转变为迟疑和结结巴巴。｜ 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
+| <audio controls><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg"></audio> | 语气先是急切的，然后转变为迟疑和结结巴巴。| 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg"></audio> | 心里面满是自责，言语中充满着不愉快，非常的伤心 | 言辞恳切，语气哀伤，心情悲痛 | 一个年轻女性，音调高亢，语速适中，带着不悦的情绪说。|
 | <audio controls><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg"></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|         
 
@@ -66,9 +94,8 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 
 
 
-
               
-## Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R
+### Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R (Please refer to Paper Section 4.2)
 | Text | Word Emphasis | Regenerated Audio | 
 |:-------------|:------------- |:------------------|
 | 'It is a story,' Sara would answer. |story| <audio controls><source src="./userstudy/1/6160_44912_000046_000000.wav" type="audio/mpeg"></audio> |
