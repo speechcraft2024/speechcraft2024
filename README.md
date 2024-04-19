@@ -50,7 +50,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 ### Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
 
 | Style Prompt | Word Emphasis | Audio (Instruction Version) |
-|:-------------|:------------- |:------------------|
+|:-------------|:-------------|:------------------|
 |A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Waitress" by stressing it significantly.| Waitress | <audio controls><source src="./userstudy/1/5002.wav" type="audio/mpeg"></audio> |
 |A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Wealthy" by stressing it significantly.| Wealthy | <audio controls><source src="./userstudy/1/6002.wav" type="audio/mpeg"></audio> |
 |A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Woodsman" by stressing it significantly.| Woodsman | <audio controls><source src="./userstudy/1/8002.wav" type="audio/mpeg"></audio> |
@@ -60,7 +60,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 <img src="./userstudy/1/Mel_Case_Study.png" alt="Mel-spectrogram" title="Mel-spectrogram">
 
 | Style Prompt | Word Emphasis | Audio (Description Version) | Audio (Instruction Version) |
-|:-------------|:------------- |:------------------|:------------------|
+|:-------------|:-------------|:------------------|:------------------|
 | Speaking with a natural tone and at a normal speed, a young girl with normal pitch and low volume says, "'It is a story,' Sara would answer.", adding a touch of charm to the conversation, highlighting "story" with pronounced emphasis. |story| <audio controls><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg"></audio> | <audio controls><source src="./0417.wav" type="audio/mpeg"></audio> |
 | In an environment where naturalness rules, a calm adult male with normal pitch and low volume speaks rapidly, expressing: "That was something over thirteen years ago.", projecting "years" with significant stress. |years| <audio controls><source src="./userstudy/1/infer-vocos-0429.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/0429.wav" type="audio/mpeg"></audio> |
 | A youthful male with normal pitch and low volume explosively states, "Here I can cheaply purchase a delicious self-approval." He speaks rapidly in a natural manner, drawing attention to "self" by stressing it significantly. |self| <audio controls><source src="./userstudy/1/infer-vocos-0440.wav" type="audio/mpeg"></audio> |  <audio controls><source src="./userstudy/1/0440.wav" type="audio/mpeg"></audio> |
@@ -72,7 +72,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 
 ### Experimental Results for Automated Speech Style Captioning (Please refer to Paper Section 5.3)
 | Audio | Human Annotation from SECap | SECap Caption | Ours | 
-|:-------------|:------------- |:------------------|:------------------|
+|:-------------|:-------------|:------------------|:------------------|
 | <audio controls><source src="./userstudy/4/tx_emotion_00203000086.wav " type="audio/mpeg"></audio> | 心情喜悦无比，兴高采烈 | 感到幸福和欢喜 | 一名年轻女性，音调高亢，语速很快，情绪中透露着喜悦和欢喜。|
 | <audio controls><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg"></audio> | 语气中充满了惊讶，心情分外的愉悦，强压制住心中的喜悦。 | 声音充满了好奇，语气中带着小心翼翼的期待。 | 一位年轻女性，音调高亢，语速适中，带着疑惑和不解的情绪说|
 | <audio controls><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg"></audio> | 事事埋怨的感觉 | 很会的样子 | 一名年轻男性，音调高亢，语速快，愤怒地说。|
@@ -82,7 +82,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 | <audio controls><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg"></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|         
 
 | Audio | Annotation from the automatic system | Automated Speech Style Captioning |
-|:-------------|:------------- |:------------------|
+|:-------------|:-------------|:------------------|
 | <audio controls><source src="./userstudy/4/POD0000001256_S0000303.wav" type="audio/mpeg"></audio> | Expressing angry in the domain of news and politics, an old male with a normal pitch and energy speaks rapidly. | says an angry adult male with normal pitch and volume, speaking at a fast pace. This conversation takes place in the context of News and Politics.
 | <audio controls><source src="./userstudy/4/YOU0000001807_S0000305.wav" type="audio/mpeg"></audio> | Delving into the world of Education, a cheerful young woman with low pitch and high energy enthusiastically explains. | A happy teenage girl with normal pitch and high volume speaks slowly, expressing her thoughts in an educational setting.
 | <audio controls><source src="./userstudy/4/AUD0000000487_S0000797.wav" type="audio/mpeg"></audio> | Embarking on a narration in an audiobook, a sad teenage female with a normal pitch and normal energy sets the stage with a poignant line. | In the context of an audiobook, a teenage girl with normal pitch and volume speaks at a moderate speed, conveying her thoughts.
@@ -97,7 +97,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
               
 ### Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R (Please refer to Paper Section 4.2)
 | Text | Word Emphasis | Regenerated Audio | 
-|:-------------|:------------- |:------------------|
+|:-------------|:-------------|:------------------|
 | 'It is a story,' Sara would answer. |story| <audio controls><source src="./userstudy/1/6160_44912_000046_000000.wav" type="audio/mpeg"></audio> |
 | That was something over thirteen years ago. |years| <audio controls><source src="./userstudy/1/7247_101864_000028_000002.wav" type="audio/mpeg"></audio> |
 | Here I can cheaply purchase a delicious self-approval. |self| <audio controls><source src="./userstudy/1/1571_141320_000031_000007.wav" type="audio/mpeg"></audio> |
