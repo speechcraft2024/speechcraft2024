@@ -1,5 +1,5 @@
 
-# Dataset Observation
+# SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description
 SpeechCraft is a large-scale expressive bilingual speech dataset with natural language descriptions resulting from an automatic speech annotation system.
 It encompasses over 2,000,000 audio clips annotated with two versions of text prompts, called speech Descriptions (exclude transcript) and speech Instructions (include transcript).
 
@@ -9,7 +9,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 # Experimental Results
 ## Experimental Results for Expressive Speech Synthesis
 
-| Style Prompt | Text | Audio (TextrolSpeech Demo) | Audio (SpeechCraft Description Version) |
+| Style Prompt | Text | Audio (TextrolSpeech) | Audio (SpeechCraft Description Version) |
 |:-------------|:-------------|:------------------|:------------------|
 | The man employs a deep tone and average speaking speed, projecting an overall low vitality. | A doctor believes this boy to be mad. | <audio controls><source src="./userstudy/5/03_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/003.wav" type="audio/mpeg"></audio> |
 | The male speaker's energetic discourse is accompanied by a normal pitch and speed. | A doctor believes this boy to be mad. | <audio controls><source src="./userstudy/5/04_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/004.wav" type="audio/mpeg"></audio> |

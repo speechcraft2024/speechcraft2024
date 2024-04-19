@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description | Your awesome title</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="https://speechcraft2024.github.io//" />
+<meta property="og:url" content="https://speechcraft2024.github.io//" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description","name":"Your awesome title","url":"https://speechcraft2024.github.io//"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="./assets/css/style.css?v=3f208c73961b548560f77167fae79531e7399c3f">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description</h1>
+      <h2 class="project-tagline">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</h2>
+      
+        <a href="https://github.com/jessyjinzy/jessyjinzy" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="speechcraft-a-fine-grained-expressive-speech-dataset-with-natural-language-description">SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description</h1>
+<p>SpeechCraft is a large-scale expressive bilingual speech dataset with natural language descriptions resulting from an automatic speech annotation system.
+It encompasses over 2,000,000 audio clips annotated with two versions of text prompts, called speech Descriptions (exclude transcript) and speech Instructions (include transcript).</p>
+
+<p>We are planning to open source SpeechCraft, making it the laregest natural language stylistic dataset that encompass the most fine-grained attributes and the most diverse natural language descriptions available.</p>
+
+<h1 id="experimental-results">Experimental Results</h1>
+<h2 id="experimental-results-for-expressive-speech-synthesis">Experimental Results for Expressive Speech Synthesis</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Style Prompt</th>
+      <th style="text-align: left">Text</th>
+      <th style="text-align: left">Audio (TextrolSpeech)</th>
+      <th style="text-align: left">Audio (SpeechCraft Description Version)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">The man employs a deep tone and average speaking speed, projecting an overall low vitality.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/03_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/003.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">The male speaker’s energetic discourse is accompanied by a normal pitch and speed.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/04_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/004.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">The man employs a low-pitched voice, keeping a regular rhythm and usual energy in conversation.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/07_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/007.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Rapidly speaking, the despair man’s deep voice resonates with a sense of normal energy.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/3_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/infer-vocos-0102.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">The despair woman’s high-pitched voice carried a slow speech.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/1_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/001111.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">The woman’s voice is vibrant, high-pitched, and delivered rapidly.</td>
+      <td style="text-align: left">A doctor believes this boy to be mad.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/08_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/008.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">In the context of News and Politics, a calm youth female with normal pitch and high energy describes the details of Felix Sater’s forty million dollars pump-and-dump scheme and his cooperation with the government, highlighting their confidential nature.</td>
+      <td style="text-align: left">Like, everything you just heard about felix sater’s forty million dollars pump-and-dump scheme and his cooperation with the government goes into a vault.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Surprised by the information, an adult male with normal pitch and energy speaks rapidly, exclaiming,  Their fast speech reflects their astonishment. In the context of Crime, they express their surprise.</td>
+      <td style="text-align: left">Oh, wow! What, what age did that start?</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">In the midst of a calm and composed atmosphere of Sports, an old male with high pitch and high energy speaks slowly, highlighting the profound emphasis placed on family before the commencement of a race.</td>
+      <td style="text-align: left">You see just how much he was thinking about family before the start of this race.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">In a somber tone, an adult male with normal pitch and energy speaks slowly about the snow piling up on the streets.</td>
+      <td style="text-align: left">The snow was piling waist high upon the streets.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">With a low pitch and high energy, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his joy and excitement. This falls under the category of Education.</td>
+      <td style="text-align: left">He was blowing excitedly and running his fingers through his hair.</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- | The despair woman's voice resonated slowly, her miserable energy remaining low, pitch high. | Racism has no place in any sport. | <audio controls><source src="./userstudy/5/4_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0103.wav" type="audio/mpeg"></audio> |
+| A boy said in a desperate voice. | One even gave my little dog a biscuit. | <audio controls><source src="./userstudy/5/5_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0104.wav" type="audio/mpeg"></audio> |
+| The despair woman's voice resonated slowly, her miserable energy remaining low, pitch high. | One even gave my little dog a biscuit. | <audio controls><source src="./userstudy/5/6_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0105.wav" type="audio/mpeg"></audio> | -->
+<!-- | The despair woman's high-pitched voice carried a slow yet energetic speech. | Racism has no place in any sport. | <audio controls><source src="./userstudy/5/2_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/infer-vocos-0101.wav" type="audio/mpeg"></audio> | -->
+<!-- | With heightened volume, she conveys her high energy. | A doctor believes this boy to be mad. | <audio controls><source src="./userstudy/5/12_decompressed.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/5/012.wav" type="audio/mpeg"></audio> | -->
+<h2 id="experimental-results-for-fine-grained-speech-emphasis-control">Experimental Results for Fine-Grained Speech Emphasis Control</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Style Prompt</th>
+      <th style="text-align: left">Word Emphasis</th>
+      <th style="text-align: left">Audio (Description Version)</th>
+      <th style="text-align: left">Audio (Instruction Version)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Speaking with a natural tone and at a normal speed, a young girl with normal pitch and low volume says, “‘It is a story,’ Sara would answer.”, adding a touch of charm to the conversation, highlighting “story” with pronounced emphasis.</td>
+      <td style="text-align: left">story</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./0417.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">In an environment where naturalness rules, a calm adult male with normal pitch and low volume speaks rapidly, expressing: “That was something over thirteen years ago.”, projecting “years” with significant stress.</td>
+      <td style="text-align: left">years</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0429.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0429.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A youthful male with normal pitch and low volume explosively states, “Here I can cheaply purchase a delicious self-approval.” He speaks rapidly in a natural manner, drawing attention to “self” by stressing it significantly.</td>
+      <td style="text-align: left">self</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0440.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0440.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">A fast-paced conversation with a youth female with low pitch and low volume: “Were you born in Spain, Pablo?”, uttering “Spain” with particular stress.</td>
+      <td style="text-align: left">Spain</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0502.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0502.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">少女声音略带高昂，音量适中，以缓慢的语速，表达了自己内心的不相信和怀疑，说：“不可以叫住院医师！”，在说“叫”时加大了语气。</td>
+      <td style="text-align: left">叫</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1012.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1012.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">中年女性，声音低沉带有些许忧伤，以低沉的音调，低声说道：“进入前一集。”，确保“进入”被突出地读出。</td>
+      <td style="text-align: left">进入</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1038.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1038.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">一位青年男性，声音中等音量，音调中等，语气充满愤怒的发怒，毫不留情地说：“男人哭吧不是罪。”，在“男人”这个词上特别强调。</td>
+      <td style="text-align: left">男人</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1053.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">年轻女孩的音调很高，音量也非常高，更快速的说出：“如果当时没被抱错。”她的声音中透露着一种不耐烦的情感，在“被”字上进行了强调发音。</td>
+      <td style="text-align: left">被</td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1526.wav" type="audio/mpeg" /></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="experimental-results-for-automated-speech-style-captioning">Experimental Results for Automated Speech Style Captioning</h2>
+<p>| Audio | Human Annotation from SECap | SECap Caption | Ours | 
+|:————-|:————- |:——————|:——————|
+| <audio controls=""><source src="./userstudy/4/tx_emotion_00203000086.wav " type="audio/mpeg" /></audio> | 心情喜悦无比，兴高采烈 | 感到幸福和欢喜 | 一名年轻女性，音调高亢，语速很快，情绪中透露着喜悦和欢喜。|
+| <audio controls=""><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg" /></audio> | 语气中充满了惊讶，心情分外的愉悦，强压制住心中的喜悦。 | 声音充满了好奇，语气中带着小心翼翼的期待。 | 一位年轻女性，音调高亢，语速适中，带着疑惑和不解的情绪说|
+| <audio controls=""><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg" /></audio> | 事事埋怨的感觉 | 很会的样子 | 一名年轻男性，音调高亢，语速快，愤怒地说。|
+| <audio controls=""><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg" /></audio> | 语调欢快活泼，抑扬顿挫，内心充满惊讶和好奇 | 语调平缓，询问的口吻，流露了疑惑和不解 | 一个年轻女性，音调适中，语速较快，抑扬顿挫地说。|
+| <audio controls=""><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg" /></audio> | 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
+| <audio controls=""><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg" /></audio> | 心里面满是自责，言语中充满着不愉快，非常的伤心 | 言辞恳切，语气哀伤，心情悲痛 | 一个年轻女性，音调高亢，语速适中，带着不悦的情绪说。|
+| <audio controls=""><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg" /></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Audio</th>
+      <th style="text-align: left">Annotation from the automatic system</th>
+      <th style="text-align: left">Automated Speech Style Captioning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000001256_S0000303.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">Expressing angry in the domain of news and politics, an old male with a normal pitch and energy speaks rapidly.</td>
+      <td style="text-align: left">says an angry adult male with normal pitch and volume, speaking at a fast pace. This conversation takes place in the context of News and Politics.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/YOU0000001807_S0000305.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">Delving into the world of Education, a cheerful young woman with low pitch and high energy enthusiastically explains.</td>
+      <td style="text-align: left">A happy teenage girl with normal pitch and high volume speaks slowly, expressing her thoughts in an educational setting.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/AUD0000000487_S0000797.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">Embarking on a narration in an audiobook, a sad teenage female with a normal pitch and normal energy sets the stage with a poignant line.</td>
+      <td style="text-align: left">In the context of an audiobook, a teenage girl with normal pitch and volume speaks at a moderate speed, conveying her thoughts.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/AUD0000000116_S0000440.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">With a sense of angry, an adult male with normal pitch and energy speaks slowly in an audiobook setting, describing a scene.</td>
+      <td style="text-align: left">In the context of an audiobook, a natural adult male with normal pitch and volume speaks at a slow pace.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000005252_S0000022.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">Reflecting on the alleviation or disappearance of symptoms after a fast, a calm elderly male with a high pitch and slow speaking speed shares the observation.</td>
+      <td style="text-align: left">expresses a natural old male with normal pitch and high volume, speaking at a slow pace.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000000648_S0000020.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">Expressing sadness in the context of News and Politics, a calm adult female with normal pitch and energy speaks slowly about racial anguish, saying.</td>
+      <td style="text-align: left">says a sad adult female with normal pitch and volume, speaking at a slow pace in the context of News and Politics.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000001248_S0000334.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: left">With high energy and a slow pace, a happy female youth with normal pitch conveys her thoughts.  Her words reflect a positive and optimistic outlook. (Category. News and Politics)</td>
+      <td style="text-align: left">expresses a sad adult female with normal pitch and high volume, speaking at a slow pace in the context of News and Politics.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="examples-of-the-regenerated-emphasis-data-from-aishell-3-and-libritts-r">Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R</h2>
+<p>| Text | Word Emphasis | Regenerated Audio | 
+|:————-|:————- |:——————|
+| ‘It is a story,’ Sara would answer. |story| <audio controls=""><source src="./userstudy/1/6160_44912_000046_000000.wav" type="audio/mpeg" /></audio> |
+| That was something over thirteen years ago. |years| <audio controls=""><source src="./userstudy/1/7247_101864_000028_000002.wav" type="audio/mpeg" /></audio> |
+| Here I can cheaply purchase a delicious self-approval. |self| <audio controls=""><source src="./userstudy/1/1571_141320_000031_000007.wav" type="audio/mpeg" /></audio> |
+| Were you born in Spain, Pablo? |Spain| <audio controls=""><source src="./userstudy/1/1825_135580_000127_000000.wav" type="audio/mpeg" /></audio> |
+| 不可以叫住院医师 | 叫 | <audio controls=""><source src="./userstudy/1/train_SSB00090512.wav" type="audio/mpeg" /></audio> |
+| 进入前一集 | 进入 | <audio controls=""><source src="./userstudy/1/train_SSB03090351.wav" type="audio/mpeg" /></audio> |
+| 男人哭吧不是罪 | 男人 | <audio controls=""><source src="./userstudy/1/train_SSB02610028.wav" type="audio/mpeg" /></audio> |
+| 如果当时没被抱错 | 被 | <audio controls=""><source src="./userstudy/1/train_SSB10720450.wav" type="audio/mpeg" /></audio> |</p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/jessyjinzy/jessyjinzy">jessyjinzy</a> is maintained by <a href="https://github.com/jessyjinzy">jessyjinzy</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
