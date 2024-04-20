@@ -39,7 +39,8 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | <audio controls><source src="./userstudy/6/train_SSB03540311.wav" type="audio/mpeg"></audio> | 一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说：“全年将有望突破三千亿。”|
 | <audio controls><source src="./userstudy/6/train_SSB04340429.wav" type="audio/mpeg"></audio> | 中年男子高分贝，快速地高声说道：“中证房天下大数据指数的推出。”他充满兴奋的语气，反映出他对这个话题话题热衷的态度。|
 
-### 1.3 Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R (Please refer to Paper Section 4.2)
+### 1.3 Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R 
+### (Please refer to Paper Section 4.2)
 
 | Text | Word Emphasis | Regenerated Audio | Speech Instructions |
 |:-------------|:-------------|:------------------|:------------------|
@@ -53,7 +54,8 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | 如果当时没被抱错 | 被 | <audio controls><source src="./userstudy/1/train_SSB10720450.wav" type="audio/mpeg"></audio> | 年轻女孩的音调很高，音量也非常高，更快速的说出：“如果当时没被抱错。”她的声音中透露着一种不耐烦的情感，在“被”字上进行了强调发音。|
 
 ## 2. Experimental Results
-### 2.1 Experimental Results for Expressive Speech Synthesis (Please refer to Paper Section 5.1)
+### 2.1 Experimental Results for Expressive Speech Synthesis 
+### (Please refer to Paper Section 5.1)
 
 | Style Prompt | Text | Audio (TextrolSpeech) | Audio (SpeechCraft Description Version) |
 |:-------------|:-------------|:------------------|:------------------|
@@ -70,7 +72,8 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | With a low pitch and high energy, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his joy and excitement. This falls under the category of Education. | He was blowing excitedly and running his fingers through his hair. | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg"></audio> |
 
 
-### 2.2 Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
+### 2.2 Experimental Results for Fine-Grained Speech Emphasis Control 
+### (Please refer to Paper Section 5.2)
 
 Style Prompt: A youthful male with normal pitch and low volume explosively states, "Winsome Waitress Wins Wealthy Wisconsin Woodsman." He speaks rapidly in a natural manner, drawing attention to "***" by stressing it significantly.
 
@@ -79,6 +82,8 @@ Style Prompt: A youthful male with normal pitch and low volume explosively state
 | Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Waitress | <audio controls><source src="./userstudy/1/5002.wav" type="audio/mpeg"></audio> |
 | Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Wealthy | <audio controls><source src="./userstudy/1/6002.wav" type="audio/mpeg"></audio> |
 | Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Woodsman | <audio controls><source src="./userstudy/1/8002.wav" type="audio/mpeg"></audio> |
+
+<br>
 
 | Text | Word Emphasis | Audio (Description Version) | Audio (Instruction Version) |
 |:-------------|:-------------|:------------------|:------------------|
@@ -91,7 +96,8 @@ Style Prompt: A youthful male with normal pitch and low volume explosively state
 | 男人哭吧不是罪。 | 男人 | <audio controls><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1053.wav" type="audio/mpeg"></audio> |
 | 如果当时没被抱错。 | 被 | <audio controls><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1526.wav" type="audio/mpeg"></audio> |
 
-### 2.3 Experimental Results for Automated Speech Style Captioning (Please refer to Paper Section 5.3)
+### 2.3 Experimental Results for Automated Speech Style Captioning 
+### (Please refer to Paper Section 5.3)
 
 | Audio | Human Annotation from SECap | SECap Caption | Ours | 
 |:-------------|:-------------|:------------------|:------------------|
@@ -101,7 +107,9 @@ Style Prompt: A youthful male with normal pitch and low volume explosively state
 | <audio controls><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg"></audio> | 语调欢快活泼，抑扬顿挫，内心充满惊讶和好奇 | 语调平缓，询问的口吻，流露了疑惑和不解 | 一个年轻女性，音调适中，语速较快，抑扬顿挫地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_01_016_0008_000037.wav " type="audio/mpeg"></audio> | 语气先是急切的，然后转变为迟疑和结结巴巴。| 语气中充满了紧张，心里非常的慌乱，感到害怕。 | 一位年轻女性，音调中等，语速较慢地说。|
 | <audio controls><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg"></audio> | 心里面满是自责，言语中充满着不愉快，非常的伤心 | 言辞恳切，语气哀伤，心情悲痛 | 一个年轻女性，音调高亢，语速适中，带着不悦的情绪说。|
-| <audio controls><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg"></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|         
+| <audio controls><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg"></audio> | 好奇心所致，保持疑惑，想要知道答案。 | 对某件事有疑心，和不解 | 一位年轻女性的音调高亢，语速适中，心有所疑虑地说。|  
+
+<br>
 
 | Audio | Annotation from the automatic system | Automated Speech Style Captioning |
 |:-------------|:-------------|:------------------|

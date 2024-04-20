@@ -15,11 +15,6 @@ audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: 
 
 /** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
 audio:not([controls]) { display: none; height: 0; }
-audio {
-  width: 200px; /* 或者任何你想要的宽度 */
-  display: block; /* 使得audio标签块状显示 */
-  margin: 0 auto; /* 自动外边距会使得控件居中 */
-}
 
 /** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
 [hidden], template { display: none; }
@@ -310,7 +305,7 @@ a:hover { text-decoration: underline; }
 .main-content blockquote { padding: 0 1rem; margin-left: 0; color: #819198; border-left: 0.3rem solid #dce6f0; }
 .main-content blockquote > :first-child { margin-top: 0; }
 .main-content blockquote > :last-child { margin-bottom: 0; }
-.main-content table { display: block; width: 150%; overflow: auto; word-break: normal; word-break: keep-all; -webkit-overflow-scrolling: touch; }
+.main-content table { display: block; width: 100%; overflow: auto; word-break: normal; word-break: keep-all; -webkit-overflow-scrolling: touch; }
 .main-content table th { font-weight: bold; }
 .main-content table th, .main-content table td { padding: 0.5rem 1rem; border: 1px solid #e9ebec; }
 .main-content dl { padding: 0; }
