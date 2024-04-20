@@ -72,15 +72,13 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 
 ### 2.2 Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
 
-| Style Prompt | Word Emphasis | Audio (Instruction Version) |
-|:-------------|:-------------|:------------------|
-|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Waitress" by stressing it significantly.| Waitress | <audio controls><source src="./userstudy/1/5002.wav" type="audio/mpeg"></audio> |
-|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Wealthy" by stressing it significantly.| Wealthy | <audio controls><source src="./userstudy/1/6002.wav" type="audio/mpeg"></audio> |
-|A youthful male with normal pitch and low volume explosively states, ""Winsome Waitress Wins Wealthy Wisconsin Woodsman."" He speaks rapidly in a natural manner, drawing attention to "Woodsman" by stressing it significantly.| Woodsman | <audio controls><source src="./userstudy/1/8002.wav" type="audio/mpeg"></audio> |
+Style Prompt: A youthful male with normal pitch and low volume explosively states, "Winsome Waitress Wins Wealthy Wisconsin Woodsman." He speaks rapidly in a natural manner, drawing attention to "***" by stressing it significantly.
 
-<div style="text-align:center;">
-<img width="320" height="240" src="./userstudy/1/Mel_Case_Study.png" alt="Mel-spectrogram" title="Mel-spectrogram">
-</div>
+| Text | Word Emphasis | Audio (Instruction Version) |
+|:-------------|:-------------|:------------------|
+| Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Waitress | <audio controls><source src="./userstudy/1/5002.wav" type="audio/mpeg"></audio> |
+| Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Wealthy | <audio controls><source src="./userstudy/1/6002.wav" type="audio/mpeg"></audio> |
+| Winsome Waitress Wins Wealthy Wisconsin Woodsman. | Woodsman | <audio controls><source src="./userstudy/1/8002.wav" type="audio/mpeg"></audio> |
 
 | Text | Word Emphasis | Audio (Description Version) | Audio (Instruction Version) |
 |:-------------|:-------------|:------------------|:------------------|
