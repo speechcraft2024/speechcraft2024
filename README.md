@@ -1,11 +1,10 @@
 
-# SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description
 SpeechCraft is a large-scale expressive bilingual speech dataset with natural language descriptions resulting from an automatic speech annotation system.
 It encompasses over 2,000,000 audio clips annotated with two versions of text prompts, called speech Descriptions (exclude transcript) and speech Instructions (include transcript).
 
 We are planning to open source SpeechCraft, making it the laregest natural language stylistic dataset that encompass the most fine-grained attributes and most diverse natural language descriptions available.
 
-## SpeechCraft Dataset Observation
+## 1. SpeechCraft Dataset Observation
 
 <div style="text-align:center;">
 <video width="320" height="240" controls>
@@ -15,7 +14,7 @@ We are planning to open source SpeechCraft, making it the laregest natural langu
 
 SpeechCraft is obtained by employing an automatic speech annotation system to four open-source speech datasets. The annotation system adopted various kinds of speech style recognition with LLMs rewriting to form detailed and customized descriptions for expressiveness interpretation. The system framework is illustrated as the video.
 
-### Examples of the speech Descriptions compared with TextrolSpeech
+### 1.1 Examples of the speech Descriptions compared with TextrolSpeech
 
 | Audio | Text | TextrolSpeech | Speech Descriptions |
 |:-------------|:-------------|:------------------|:------------------|
@@ -25,7 +24,7 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | <audio controls><source src="./userstudy/2/part2/0019_001170.wav" type="audio/mpeg"></audio> |Our King George is labourers. | Her low-energy voice carried her sad words gradually, maintaining a normal pitch. |Speaking slowly and plaintively, a woman remarks. With a normal pitch and low volume, she emphasizes the significance of this statement.|
 | <audio controls><source src="./userstudy/2/part2/0012_000590.wav" type="audio/mpeg"></audio> | Both side were softly curved. | The man's high-pitched voice resonates through his angry slow-paced speech with regular energy. | Engrossed in an angry conversation, a young boy with a high pitch and a normal volume declares. He is energetic and spoken rapidly, but his heart is heavy with frustration.|
 
-### Examples of the speech Instructions
+### 1.2 Examples of the speech Instructions
 
 | Audio | Speech Instructions |
 |:-------------|:-------------|
@@ -40,7 +39,7 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | <audio controls><source src="./userstudy/6/train_SSB03540311.wav" type="audio/mpeg"></audio> | 一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说：“全年将有望突破三千亿。”|
 | <audio controls><source src="./userstudy/6/train_SSB04340429.wav" type="audio/mpeg"></audio> | 中年男子高分贝，快速地高声说道：“中证房天下大数据指数的推出。”他充满兴奋的语气，反映出他对这个话题话题热衷的态度。|
 
-### Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R (Please refer to Paper Section 4.2)
+### 1.3 Examples of the Regenerated Emphasis Data from AISHELL-3 and Libritts-R (Please refer to Paper Section 4.2)
 
 | Text | Word Emphasis | Regenerated Audio | Speech Instructions |
 |:-------------|:-------------|:------------------|:------------------|
@@ -53,8 +52,8 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | 男人哭吧不是罪 | 男人 | <audio controls><source src="./userstudy/1/train_SSB02610028.wav" type="audio/mpeg"></audio> | 一位青年男性，声音中等音量，音调中等，语气充满愤怒的发怒，毫不留情地说：“男人哭吧不是罪。”，在“男人”这个词上特别强调。 |
 | 如果当时没被抱错 | 被 | <audio controls><source src="./userstudy/1/train_SSB10720450.wav" type="audio/mpeg"></audio> | 年轻女孩的音调很高，音量也非常高，更快速的说出：“如果当时没被抱错。”她的声音中透露着一种不耐烦的情感，在“被”字上进行了强调发音。|
 
-## Experimental Results
-### Experimental Results for Expressive Speech Synthesis (Please refer to Paper Section 5.1)
+## 2. Experimental Results
+### 2.1 Experimental Results for Expressive Speech Synthesis (Please refer to Paper Section 5.1)
 
 | Style Prompt | Text | Audio (TextrolSpeech) | Audio (SpeechCraft Description Version) |
 |:-------------|:-------------|:------------------|:------------------|
@@ -71,7 +70,7 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | With a low pitch and high energy, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his joy and excitement. This falls under the category of Education. | He was blowing excitedly and running his fingers through his hair. | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg"></audio> |
 
 
-### Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
+### 2.2 Experimental Results for Fine-Grained Speech Emphasis Control (Please refer to Paper Section 5.2)
 
 | Style Prompt | Word Emphasis | Audio (Instruction Version) |
 |:-------------|:-------------|:------------------|
@@ -94,7 +93,7 @@ SpeechCraft is obtained by employing an automatic speech annotation system to fo
 | 男人哭吧不是罪。 | 男人 | <audio controls><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1053.wav" type="audio/mpeg"></audio> |
 | 如果当时没被抱错。 | 被 | <audio controls><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg"></audio> | <audio controls><source src="./userstudy/1/1526.wav" type="audio/mpeg"></audio> |
 
-### Experimental Results for Automated Speech Style Captioning (Please refer to Paper Section 5.3)
+### 2.3 Experimental Results for Automated Speech Style Captioning (Please refer to Paper Section 5.3)
 
 | Audio | Human Annotation from SECap | SECap Caption | Ours | 
 |:-------------|:-------------|:------------------|:------------------|
