@@ -33,7 +33,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="stylesheet" href="./assets/css/style.css?v=d1b7906bc9e779f69a01c4648e53df426aaf284b">
+<link rel="stylesheet" href="./assets/css/style.css">
 <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -52,12 +52,9 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description</h1>
       <h2 class="project-tagline"></h2>
-      
-        <a href="https://github.com/speechcraft2024/speechcraft2024" class="btn">View on GitHub</a>
-      
-      
+  
     </header>
-
+<!-- 修改 -->
     <main id="content" class="main-content" role="main">
       
 <p><b>SpeechCraft</b> is a large-scale expressive bilingual speech dataset with natural language descriptions resulting from an automatic speech annotation system.
@@ -95,88 +92,100 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
 
 
 
-<h2 id="1-speechcraft-dataset-observation">Introducing the <b>SpeechCraft</b> Dataset</h2>
+<h2 id="1-speechcraft-dataset-observation">1. Introducing the <b>SpeechCraft</b> Dataset</h2>
 
 
 <h3 id="12-examples-of-the-speech-instructions">1.1 Overview: <b>SpeechCraft</b> Dataset</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Audio</th>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left"><u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i></th>
-      <th style="text-align: left"><u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-regular fa-star"></i></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/AUD0000001036_S0002432.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">‘Come into the water, Marcus’, said Jean peremptorily, as she put her foot against the edge of the raft.</td>
-      <td style="text-align: left">Entertaining us with her storytelling skills, a natural youth female with high pitch and normal volume speaks rapidly, enthralling us.</td>
-      <td style="text-align: left">Entertaining us with her storytelling skills, a natural youth female with high pitch and normal volume speaks rapidly, enthralling us:"COME INTO THE WATER, MARCUS, SAID JEAN PEREMPTORILY, AS SHE PUT HER FOOT AGAINST THE EDGE OF THE RAFT."</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/AUD0000001148_S0000872.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">Is it not that it is their fashion of investing themselves with importance?</td>
-      <td style="text-align: left">This audiobook features a calm, steady-paced speaking male adult with a low pitch and high volume,  reflecting on the style of investing.</td>
-      <td style="text-align: left">"IS IT NOT THAT IT IS THEIR FASHION OF INVESTING THEMSELVES WITH IMPORTANCE?" This audiobook features a calm, steady-paced speaking male adult with a low pitch and high volume, reflecting on the style of investing.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/POD0000008941_S0000476.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">Well, you know, life is holistic, Dave.</td>
-      <td style="text-align: left">Reflecting on a topic in the fields of Health and Fitness, a sad youth with low pitch and normal volume states. She speaks at a fast pace, signifying her sadness.</td>
-      <td style="text-align: left">Reflecting on a topic in the fields of Health and Fitness, a sad youth with low pitch and normal volume states, "WELL, YOU KNOW, LIFE IS HOLISTIC, DAVE." She speaks at a fast pace, signifying her sadness.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/POD0000009426_S0000120.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">And it’s very, very important to me that our family doesn’t operate like that.</td>
-      <td style="text-align: left">Expressing happiness, a high-pitched and high-volume female teenager speaker enthusiastically states, in a fast-paced manner. Speaking in the context of News and Politics, she reflects upon a particular topic, expressing excitement about her words.</td>
-      <td style="text-align: left">Expressing happiness, a high-pitched and high-volume female teenager speaker enthusiastically states, "AND IT’S VERY, VERY IMPORTANT TO ME THAT OUR FAMILY DOESN’T OPERATE LIKE THAT." in a fast-paced manner. Speaking in the context of News and Politics, she reflects upon a particular topic, expressing excitement about her words.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/YOU0000012901_S0000187.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">I say, i enjoyed your film. That’s why.</td>
-      <td style="text-align: left">Expressing joy in the context of Entertainment, a happy adult male with normal pitch and volume speaks rapidly and says. His words reflect a positive attitude and amiable mood, evoking delight in the listener.</td>
-      <td style="text-align: left">Expressing joy in the context of Entertainment, a happy adult male with normal pitch and volume speaks rapidly and says, "I SAY, I ENJOYED YOUR FILM. THAT’S WHY." His words reflect a positive attitude and amiable mood.</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/train_SSB05990298.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">这个铜牌可以当作生日礼物。</td>
-      <td style="text-align: left">这位年轻女士的音调中等，音量低沉，语速很快。她的语气中透露着内心的自信，还有些得意。</td>
-      <td style="text-align: left">“这个铜牌可以当作生日礼物。”这位年轻女士的音调中等，音量低沉，语速很快。她的语气中透露着内心的自信，还有些得意。</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/train_SSB01120308.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">很多著名的流行音乐歌星都因使用毒品而毁了自己。</td>
-      <td style="text-align: left">这位少女的音调中等，音量适中，语速很快，语气坚定，语气中带着怀疑和不相信的态度。</td>
-      <td style="text-align: left">“很多著名的流行音乐歌星都因使用毒品而毁了自己。”这位少女的音调中等，音量适中，语速很快，语气坚定，语气中带着怀疑和不相信的态度。</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/train_SSB06030260.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">自被列入十二五规划后。</td>
-      <td style="text-align: left">男孩的声音很低沉，语气很认真，语气比较平静，有点内敛的感觉，用较高的音量，以较快的语速说着。</td>
-      <td style="text-align: left">男孩的声音很低沉，语气很认真，语气比较平静，有点内敛的感觉，用较高的音量，以较快的语速说：“自被列入十二五规划后。”</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/train_SSB03540311.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">全年将有望突破三千亿。</td>
-      <td style="text-align: left">一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说着。</td>
-      <td style="text-align: left">一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说：“全年将有望突破三千亿。”</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/6/train_SSB04340429.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left">中证房天下大数据指数的推出。</td>
-      <td style="text-align: left">中年男子高分贝，快速地高声说道。他充满兴奋的语气，反映出他对这个话题话题热衷的态度。</td>
-      <td style="text-align: left">中年男子高分贝，快速地高声说道：“中证房天下大数据指数的推出。”他充满兴奋的语气，反映出他对这个话题话题热衷的态度。</td>
-    </tr>
-  </tbody>
-</table>
 
-<div class="site-footer-item">
-  <a href="#top">Back To Top</a>
+</main>
+
+<!-- 新增 -->
+<div class="table-content">
+
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Audio</th>
+        <th style="text-align: center">Transcript</th>
+        <th style="text-align: center"><u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i></th>
+        <th style="text-align: center"><u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-regular fa-star"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/AUD0000001036_S0002432.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">‘Come into the water, Marcus’, said Jean peremptorily, as she put her foot against the edge of the raft.</td>
+        <td style="text-align: left">Entertaining us with her storytelling skills, a natural youth female with high pitch and normal volume speaks rapidly, enthralling us.</td>
+        <td style="text-align: left">Entertaining us with her storytelling skills, a natural youth female with high pitch and normal volume speaks rapidly, enthralling us:"Come into the water, Marcus’, said Jean peremptorily, as she put her foot against the edge of the raft."</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/AUD0000001148_S0000872.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">Is it not that it is their fashion of investing themselves with importance?</td>
+        <td style="text-align: left">This audiobook features a calm, steady-paced speaking male adult with a low pitch and high volume,  reflecting on the style of investing.</td>
+        <td style="text-align: left">"Is it not that it is their fashion of investing themselves with importance?" This audiobook features a calm, steady-paced speaking male adult with a low pitch and high volume, reflecting on the style of investing.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/POD0000008941_S0000476.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">Well, you know, life is holistic, Dave.</td>
+        <td style="text-align: left">Reflecting on a topic in the fields of Health and Fitness, a sad youth with low pitch and normal volume states. She speaks at a fast pace, signifying her sadness.</td>
+        <td style="text-align: left">Reflecting on a topic in the fields of Health and Fitness, a sad youth with low pitch and normal volume states, "Well, you know, life is holistic, Dave." She speaks at a fast pace, signifying her sadness.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/POD0000009426_S0000120.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">And it’s very, very important to me that our family doesn’t operate like that.</td>
+        <td style="text-align: left">Expressing happiness, a high-pitched and high-volume female teenager speaker enthusiastically states, in a fast-paced manner. Speaking in the context of News and Politics, she reflects upon a particular topic, expressing excitement about her words.</td>
+        <td style="text-align: left">Expressing happiness, a high-pitched and high-volume female teenager speaker enthusiastically states, "And it’s very, very important to me that our family doesn’t operate like that." in a fast-paced manner. Speaking in the context of News and Politics, she reflects upon a particular topic, expressing excitement about her words.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/YOU0000012901_S0000187.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">I say, i enjoyed your film. That’s why.</td>
+        <td style="text-align: left">Expressing joy in the context of Entertainment, a happy adult male with normal pitch and volume speaks rapidly and says. His words reflect a positive attitude and amiable mood, evoking delight in the listener.</td>
+        <td style="text-align: left">Expressing joy in the context of Entertainment, a happy adult male with normal pitch and volume speaks rapidly and says, "I say, i enjoyed your film. That’s why." His words reflect a positive attitude and amiable mood.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/train_SSB05990298.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">这个铜牌可以当作生日礼物。</td>
+        <td style="text-align: left">这位年轻女士的音调中等，音量低沉，语速很快。她的语气中透露着内心的自信，还有些得意。</td>
+        <td style="text-align: left">“这个铜牌可以当作生日礼物。”这位年轻女士的音调中等，音量低沉，语速很快。她的语气中透露着内心的自信，还有些得意。</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/train_SSB01120308.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">很多著名的流行音乐歌星都因使用毒品而毁了自己。</td>
+        <td style="text-align: left">这位少女的音调中等，音量适中，语速很快，语气坚定，语气中带着怀疑和不相信的态度。</td>
+        <td style="text-align: left">“很多著名的流行音乐歌星都因使用毒品而毁了自己。”这位少女的音调中等，音量适中，语速很快，语气坚定，语气中带着怀疑和不相信的态度。</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/train_SSB06030260.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">自被列入十二五规划后。</td>
+        <td style="text-align: left">男孩的声音很低沉，语气很认真，语气比较平静，有点内敛的感觉，用较高的音量，以较快的语速说着。</td>
+        <td style="text-align: left">男孩的声音很低沉，语气很认真，语气比较平静，有点内敛的感觉，用较高的音量，以较快的语速说：“自被列入十二五规划后。”</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/train_SSB03540311.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">全年将有望突破三千亿。</td>
+        <td style="text-align: left">一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说着。</td>
+        <td style="text-align: left">一位中年女性，她的音调低沉，音量高，语速适中，语气沉稳，镇定得让人感觉安心。她信心满满地说：“全年将有望突破三千亿。”</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/6/train_SSB04340429.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: left">中证房天下大数据指数的推出。</td>
+        <td style="text-align: left">中年男子高分贝，快速地高声说道。他充满兴奋的语气，反映出他对这个话题话题热衷的态度。</td>
+        <td style="text-align: left">中年男子高分贝，快速地高声说道：“中证房天下大数据指数的推出。”他充满兴奋的语气，反映出他对这个话题话题热衷的态度。</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="site-footer-item">
+    <a href="#top">Back To Top</a>
+  </div>
+
 </div>
 
+
+
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
 <h3 id="automatic-speech-annotation-system">1.2 Automatic Speech Annotation System</h3>
 
 <p>SpeechCraft is obtained by employing an automatic speech annotation system to four open-source speech datasets. The annotation system adopted various kinds of speech style recognition with LLMs rewriting to form detailed and customized descriptions for expressiveness interpretation. The system framework is illustrated as the video.</p>
@@ -193,211 +202,226 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
 
 <h4 id="11-examples-of-the-speech-descriptions-compared-with-textrolspeech">1.2.1 Compared with the Previous Works</h3>
 <p>In this section, we compared the description generated by our annotation system with TextrolSpeech, which is the existing largest speech description dataset. Speech utterances all from the TextrolSpeech Dataset.</p>
-
-
+</main>
+<!-- 新增 -->
+<div class="table-content">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Given Audio</th>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left">TextrolSpeech Dataset</th>
-      <th style="text-align: left">By Our Automatic Speech Annotation System</th>
+      <th style="text-align: center">Given Audio</th>
+      <th style="text-align: center">Transcript</th>
+      <th style="text-align: center">TextrolSpeech Dataset</th>
+      <th style="text-align: center">By Our Automatic Speech Annotation System</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/2/part2/029.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/2/part2/029.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">The revolution now under way in materials handling makes this much easier.</td>
       <td style="text-align: left">The mad male voice is slow and deliberate, with a deep and authoritative pitch.</td>
       <td style="text-align: left">Speaking with a low pitch and normal volume, a young male with an angry emotion says. His speech is swift yet creating a thought-provoking atmosphere.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/2/part2/0019_001634.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/2/part2/0019_001634.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">“Hurry up, hurry up!”</td>
       <td style="text-align: left">Speaking slowly with a high tone, she articulates her amazed words with normal energy.</td>
       <td style="text-align: left">Urging something with urgency, a surprised teenage female with a high pitch and normal volume impatiently asks.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/2/part2/016.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/2/part2/016.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">A few years later the dome fell in.</td>
       <td style="text-align: left">Speaking rapidly and in a normal pitch, the mad man’s energy during communication is low.</td>
       <td style="text-align: left">In a terse and furious tone, a high-pitched teenager with a normal volume and fast speech says. This conversation revolves around a topic related to time, as the speaker expresses their anger.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/2/part2/0019_001170.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/2/part2/0019_001170.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Our King George is labourers.</td>
       <td style="text-align: left">Her low-energy voice carried her sad words gradually, maintaining a normal pitch.</td>
       <td style="text-align: left">Speaking slowly and plaintively, a woman remarks. With a normal pitch and low volume, she emphasizes the significance of this statement.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/2/part2/0012_000590.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/2/part2/0012_000590.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Both side were softly curved.</td>
       <td style="text-align: left">The man’s high-pitched voice resonates through his angry slow-paced speech with regular energy.</td>
       <td style="text-align: left">Engrossed in an angry conversation, a young boy with a high pitch and a normal volume declares. He is energetic and spoken rapidly, but his heart is heavy with frustration.</td>
     </tr>
   </tbody>
 </table>
-
 <div class="site-footer-item">
   <a href="#top">Back To Top</a>
 </div>
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
+
 
 
 <h3 id="13-examples-of-the-regenerated-emphasis-data-from-aishell-3-and-libritts-r">1.3 Constructing Emphasis Speech Data</h3>
 <p>Here we display samples of the emphasis speech data regenerated from AISHELL-3 and Libritts-R, paired with the instructions generated by the Annotation System. <i style="color: rgb(255, 0, 0);">(ref Sec. 4.2)</i></p>
 
-
+</main>
+<!-- 新增 -->
+<div class="table-content">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left">Word Emphasis</th>
-      <th style="text-align: left">Regenerated Audio</th>
-      <th style="text-align: left"><u style="color: rgb(221, 0, 0);">speech-Instructions</u><i class="fa-regular fa-star"></i></th>
+      <th style="text-align: center">Transcript</th>
+      <th style="text-align: center">Word Emphasis</th>
+      <th style="text-align: center">Regenerated Audio</th>
+      <th style="text-align: center"><u style="color: rgb(221, 0, 0);">speech-Instructions</u><i class="fa-regular fa-star"></i></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left">‘It is a story,’ Sara would answer.</td>
       <td style="text-align: left">story</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/6160_44912_000046_000000.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/6160_44912_000046_000000.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Speaking with a natural tone and at a normal speed, a young girl with normal pitch and low volume says, “‘It is a story,’ Sara would answer.”, adding a touch of charm to the conversation, <b>highlighting “story” with pronounced emphasis.</b></td>
     </tr>
     <tr>
       <td style="text-align: left">That was something over thirteen years ago.</td>
       <td style="text-align: left">years</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/7247_101864_000028_000002.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/7247_101864_000028_000002.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">In an environment where naturalness rules, a calm adult male with normal pitch and low volume speaks rapidly, expressing: “That was something over thirteen years ago.”, <b>projecting “years” with significant stress.</b></td>
     </tr>
     <tr>
       <td style="text-align: left">Here I can cheaply purchase a delicious self-approval.</td>
       <td style="text-align: left">self</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1571_141320_000031_000007.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1571_141320_000031_000007.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">A youthful male with normal pitch and low volume explosively states, “Here I can cheaply purchase a delicious self-approval.” He speaks rapidly in a natural manner, <b>drawing attention to “self” by stressing it significantly.</b></td>
     </tr>
     <tr>
       <td style="text-align: left">Were you born in Spain, Pablo?</td>
       <td style="text-align: left">Spain</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1825_135580_000127_000000.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1825_135580_000127_000000.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">A fast-paced conversation with a youth female with low pitch and low volume: “Were you born in Spain, Pablo?”, <b>uttering “Spain” with particular stress.</b></td>
     </tr>
     <tr>
       <td style="text-align: left">不可以叫住院医师</td>
       <td style="text-align: left">叫</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/train_SSB00090512.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/train_SSB00090512.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">少女声音略带高昂，音量适中，以缓慢的语速，表达了自己内心的不相信和怀疑，说：“不可以叫住院医师！”，<b>在说“叫”时加大了语气。</b></td>
     </tr>
     <tr>
       <td style="text-align: left">进入前一集</td>
       <td style="text-align: left">进入</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/train_SSB03090351.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/train_SSB03090351.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">中年女性，声音低沉带有些许忧伤，以低沉的音调，低声说道：“进入前一集。”，<b>确保“进入”被突出地读出。</b></td>
     </tr>
     <tr>
       <td style="text-align: left">男人哭吧不是罪</td>
       <td style="text-align: left">男人</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/train_SSB02610028.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/train_SSB02610028.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">一位青年男性，声音中等音量，音调中等，语气充满愤怒的发怒，毫不留情地说：“男人哭吧不是罪。”，<b>在“男人”这个词上特别强调。</b></td>
     </tr>
     <tr>
       <td style="text-align: left">如果当时没被抱错</td>
       <td style="text-align: left">被</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/train_SSB10720450.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/train_SSB10720450.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">年轻女孩的音调很高，音量也非常高，更快速的说出：“如果当时没被抱错。”她的声音中透露着一种不耐烦的情感，<b>在“被”字上进行了强调发音。</b></td>
     </tr>
   </tbody>
 </table>
-
 <div class="site-footer-item">
   <a href="#top">Back To Top</a>
 </div>
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
+
 
 <h2 id="2-experimental-results">2. Experimental Results: Enhancing Speech-Related Tasks with the SpeechCraft Dataset</h2>
 <h3 id="21-experimental-results-for-expressive-speech-synthesis">2.1 Expressive Speech Synthesis <i style="color: rgb(255, 0, 0);">(ref Sec. 5.1)</i></h3>
 <!-- <h3 id="please-refer-to-paper-section-51">(Please refer to Paper Section 5.1)</h3> -->
 <p>In this section, we compare the SpeechCraft Dataset with TextrolSpeech Dataset on the performance of Expressive Speech Synthesis. We trained the Salle model on each dataset with same steps. Notably, the first six speech prompts and audio clips of TextrolSpeech are from its official demopage. </p>
-
+</main>
+<!-- 新增 -->
+<div class="table-content">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Style Prompt</th>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left">Synthezied Speech (Trained on TextrolSpeech Dataset)</th>
-      <th style="text-align: left">Synthezied Speech (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i>)</th>
+      <th style="text-align: center">Style Prompt</th>
+      <th style="text-align: center">Transcript</th>
+      <th style="text-align: center">Synthezied Speech <br>(Trained on TextrolSpeech Dataset)</th>
+      <th style="text-align: center">Synthezied Speech <br>(Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left">The man employs a deep tone and average speaking speed, projecting an overall low vitality.</td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/03_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/003.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/03_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/003.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">The male speaker’s <b>energetic</b> discourse is accompanied by a normal pitch and speed.</td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/04_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/004.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/04_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/004.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">The man employs a <b>low-pitched</b> voice, keeping a regular rhythm and usual energy in conversation.</td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/07_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/007.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/07_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/007.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left"><b>Rapidly speaking</b>, the despair man’s deep voice resonates with a sense of normal energy.</td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/3_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/infer-vocos-0102.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/3_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/infer-vocos-0102.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">The despair woman’s high-pitched voice carried a <b>slow speech</b>.</td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/1_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/001111.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/1_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/001111.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">The woman’s voice is vibrant, high-pitched, and <b>delivered rapidly.</b></td>
       <td style="text-align: left">A doctor believes this boy to be mad.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/08_decompressed.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/5/008.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/08_decompressed.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/5/008.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">In the context of News and Politics, a <b>calm youth female</b> with normal pitch and high energy describes the details of Felix Sater’s forty million dollars pump-and-dump scheme and his cooperation with the government, highlighting their confidential nature.</td>
       <td style="text-align: left">Like, everything you just heard about felix sater’s forty million dollars pump-and-dump scheme and his cooperation with the government goes into a vault.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left"><b>Surprised</b> by the information, an adult male with normal pitch and energy speaks rapidly, exclaiming. His <b>fast speech</b> reflects his astonishment. In the context of Crime, he expresses his surprise.</td>
       <td style="text-align: left">Oh, wow! What, what age did that start?</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">In the midst of a calm and composed atmosphere of Sports, an <b>old male</b> with high pitch and high energy <b>speaks slowly</b>, highlighting the profound emphasis placed on family before the commencement of a race.</td>
       <td style="text-align: left">You see just how much he was thinking about family before the start of this race.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">In a <b>somber</b> tone, an adult male with normal pitch and energy <b>speaks slowly</b> about the snow piling up on the streets.</td>
       <td style="text-align: left">The snow was piling waist high upon the streets.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">With a low pitch and <b>high energy</b>, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his <b>joy and excitement</b>. This falls under the category of Education.</td>
       <td style="text-align: left">He was blowing excitedly and running his fingers through his hair.</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745 (1).wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
 <div class="site-footer-item">
   <a href="#top">Back To Top</a>
 </div>
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
+
 
 
 <h3 id="22-experimental-results-for-fine-grained-speech-emphasis-control">2.2 Fine-Grained Speech Emphasis Control <i style="color: rgb(255, 0, 0);">(ref Sec. 5.2)</i></h3>
@@ -405,210 +429,231 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
 <p>In this section, we demonstrate the effectiveness of SpeechCraft on the task of Fine-Grained Speech Emphasis Control. </p>
 <p><i style="color: rgb(255, 0, 0);">(ref Fig. 5)</i> The first table shows the case study using a series of same speech instructions varied only in the words to be emphasized. <br>
   <b>Instruction:</b> A youthful male with normal pitch and low volume explosively states, “Winsome Waitress Wins Wealthy Wisconsin Woodsman.” He speaks rapidly in a natural manner, <b>drawing attention to “*” by stressing it significantly.</b></p>
-
+</main>
+<!-- 新增 -->
+<div class="table-content xg">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left">Word Emphasis</th>
-      <th style="text-align: left">Synthezied Speech (Trained on <u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-solid fa-lightbulb"></i>)</th>
+      <th style="text-align: center">Transcript</th>
+      <th style="text-align: center">Word Emphasis</th>
+      <th style="text-align: center">Synthezied Speech (Trained on <u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-solid fa-lightbulb"></i>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left">Winsome <b>Waitress</b> Wins Wealthy Wisconsin Woodsman.</td>
       <td style="text-align: left"><b>Waitress</b></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/5002.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/5002.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">Winsome Waitress Wins <b>Wealthy</b> Wisconsin Woodsman.</td>
       <td style="text-align: left"><b>Wealthy</b></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/6002.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/6002.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">Winsome Waitress Wins Wealthy Wisconsin <b>Woodsman</b>.</td>
       <td style="text-align: left"><b>Woodsman</b></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/8002.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/8002.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
-
-
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content " role="main">
 
 <p><br /></p>
 <p>In the second table, we compared the <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i> and <u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-regular fa-star"></i> in the effectiveness of Fine-Grained Speech Emphasis Control.</p>
+
+</main>
+<!-- 新增 -->
+<div class="table-content xg">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Text</th>
-      <th style="text-align: left">Word Emphasis</th>
-      <th style="text-align: left">Synthezied Speech (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i> )</th>
-      <th style="text-align: left">Synthezied Speech (Trained on <u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-regular fa-star"></i>)</th>
+      <th style="text-align: center">Transcript</th>
+      <th style="text-align: center">Word Emphasis</th>
+      <th style="text-align: center">Synthezied Speech <br> (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i> )</th>
+      <th style="text-align: center">Synthezied Speech <br>(Trained on <u style="color: rgb(34, 0, 255);">speech-Instructions</u><i class="fa-regular fa-star"></i>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left">‘It is a <b>story</b>,’ Sara would answer.</td>
       <td style="text-align: left">story</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0417.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-0417.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/0417.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">That was something over thirteen <b>years</b> ago.</td>
       <td style="text-align: left">years</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0429.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0429.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-0429.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/0429.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">Here I can cheaply purchase a delicious <b>self</b>-approval.</td>
       <td style="text-align: left">self</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0440.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0440.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-0440.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/0440.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">Were you born in <b>Spain</b>, Pablo?</td>
       <td style="text-align: left">Spain</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-0502.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/0502.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-0502.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/0502.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">不可以<b>叫</b>住院医师！</td>
       <td style="text-align: left">叫</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1012.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1012.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-1012.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1012.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left"><b>进入</b>前一集。</td>
       <td style="text-align: left">进入</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1038.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1038.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-1038.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1038.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left"><b>男人</b>哭吧不是罪。</td>
       <td style="text-align: left">男人</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1053.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-1053.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1053.wav" type="audio/mpeg" /></audio></td>
     </tr>
     <tr>
       <td style="text-align: left">如果当时没<b>被</b>抱错。</td>
       <td style="text-align: left">被</td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/1/1526.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/infer-vocos-1526.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/1/1526.wav" type="audio/mpeg" /></audio></td>
     </tr>
   </tbody>
 </table>
-
 <div class="site-footer-item">
-  <a href="#top">Back To Top</a>
+  <a href="#top" style="    margin-left: 15%;">Back To Top</a>
 </div>
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
+
 
 <h3 id="23-experimental-results-for-automated-speech-style-captioning">2.3 Experimental Results for Automated Speech Style Captioning <i style="color: rgb(255, 0, 0);">(ref Sec. 5.3)</i></h3>
 <!-- <h3 id="please-refer-to-paper-section-53">(Please refer to Paper Section 5.3)</h3> -->
 <p>In this section, we compared the SpeechCraft Dataset with the original SECap, which was trained on an internal Chinese emotion annotated dataset called EMOSpeech, demonstrating the performance of SpeechCraft on Automated Speech Style Captioning. </p>
-
+</main>
+<!-- 新增 -->
+<div class="table-content">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Audio</th>
-      <th style="text-align: left">Human Annotation from EMOSpeech</th>
-      <th style="text-align: left">Caption (Trained on original EMOSpeech)</th>
-      <th style="text-align: left">Caption (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i>)</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Human Annotation from EMOSpeech</th>
+      <th style="text-align: center">Caption (Trained on original EMOSpeech)</th>
+      <th style="text-align: center">Caption (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emotion_00203000086.wav " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emotion_00203000086.wav " type="audio/mpeg" /></audio></td>
       <td style="text-align: left">心情<b>喜悦无比</b>，兴高采烈</td>
       <td style="text-align: left">感到幸福和欢喜</td>
       <td style="text-align: left">一名年轻女性，音调高亢，<b>语速很快</b>，情绪中透露着<b>喜悦和欢喜</b>。</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emulate_00_111_0001_000023.wav " type="audio/mpeg" /></audio></td>
       <td style="text-align: left">语气中充满了<b>惊讶</b>，心情分外的愉悦，强压制住心中的喜悦。</td>
       <td style="text-align: left">声音充满了好奇，语气中带着小心翼翼的期待。</td>
       <td style="text-align: left">一位年轻女性，音调高亢，语速适中，带着<b>疑惑和不解的情绪</b>说</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emotion_00302000470.wav " type="audio/mpeg" /></audio></td>
       <td style="text-align: left"><b>事事埋怨</b>的感觉</td>
       <td style="text-align: left">很会的样子</td>
       <td style="text-align: left">一名年轻男性，音调高亢，语速快，<b>愤怒</b>地说。</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emulate_02_255_0003_000001.wav " type="audio/mpeg" /></audio></td>
       <td style="text-align: left">语调欢快活泼，<b>抑扬顿挫</b>，内心充满惊讶和好奇</td>
       <td style="text-align: left">语调平缓，询问的口吻，流露了疑惑和不解</td>
       <td style="text-align: left">一个年轻女性，音调适中，语速较快，<b>抑扬顿挫</b>地说。</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emulate_02_008_0011_000058.wav " type="audio/mpeg" /></audio></td>
       <td style="text-align: left">心里面满是自责，言语中充满着<b>不愉快</b>，非常的伤心</td>
       <td style="text-align: left">言辞恳切，语气哀伤，心情悲痛</td>
       <td style="text-align: left">一个年轻女性，音调高亢，语速适中，带着<b>不悦</b>的情绪说。</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/tx_emotion_00206000061.wav  " type="audio/mpeg" /></audio></td>
       <td style="text-align: left">好奇心所致，保持<b>疑惑</b>，想要知道答案。</td>
       <td style="text-align: left">对某件事有疑心，和不解</td>
       <td style="text-align: left">一位年轻女性的音调高亢，语速适中，心有所<b>疑虑</b>地说。</td>
     </tr>
   </tbody>
 </table>
-
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
 <p><br /></p>
 
 <p>As to English Speech Style Captioning, we showcase the description results from the Automatic Annotation System and the caption results of SECap trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i>.</p>
-
+</main>
+<!-- 新增 -->
+<div class="table-content">
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Audio</th>
-      <th style="text-align: left">Annotation from the Automatic System</th>
-      <th style="text-align: left">Caption (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i>)</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Annotation from the Automatic System</th>
+      <th style="text-align: center">Caption <br> (Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-solid fa-lightbulb"></i>)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/YOU0000001807_S0000305.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/YOU0000001807_S0000305.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Delving into the world of <b>Education</b>, a <b>cheerful young woman</b> with low pitch and high energy enthusiastically explains.</td>
       <td style="text-align: left">A <b>happy teenage girl</b> with normal pitch and high volume speaks slowly, expressing her thoughts in an <b>educational</b> setting.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/AUD0000000487_S0000797.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/AUD0000000487_S0000797.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Embarking on a narration in an <b>audiobook</b>, a sad <b>teenage female</b> with a normal pitch and normal energy sets the stage with a poignant line.</td>
       <td style="text-align: left">In the context of an<b> audiobook</b>, a <b>teenage girl</b> with normal pitch and volume speaks at a moderate speed, conveying her thoughts.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/AUD0000000116_S0000440.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/AUD0000000116_S0000440.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">With a sense of angry, an adult male with normal pitch and energy <b>speaks slowly</b> in an <b>audiobook</b> setting, describing a scene.</td>
       <td style="text-align: left">In the context of an <b>audiobook</b>, a natural adult male with normal pitch and volume speaks <b>at a slow pace</b>.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000005252_S0000022.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/POD0000005252_S0000022.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">Reflecting on the alleviation or disappearance of symptoms after a fast, a <b>calm elderly male</b> with a high pitch and <b>slow speaking</b> speed shares the observation.</td>
       <td style="text-align: left">expresses a <b>natural old male</b> with normal pitch and high volume, <b>speaking at a slow pace</b>.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000000648_S0000020.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/POD0000000648_S0000020.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left"><b>Expressing sadness</b> in the context of <b>News and Politics</b>, a calm adult female with normal pitch and energy <b>speaks slowly</b> about racial anguish, saying.</td>
       <td style="text-align: left">says <b>a sad adult</b> female with normal pitch and volume, speaking at a <b>slow pace</b> in the context of <b>News and Politics</b>.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000001248_S0000334.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/POD0000001248_S0000334.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left">With high energy and a slow pace, a happy female youth with normal pitch conveys her thoughts.  Her words reflect a positive and optimistic outlook. (<b>Category. News and Politics</b>)</td>
       <td style="text-align: left">expresses a <b>sad adult female</b> with normal pitch and high volume, speaking at a <b>slow pace</b> in the context of <b>News and Politics</b>.</td>
     </tr>
     <tr>
-      <td style="text-align: left"><audio controls=""><source src="./userstudy/4/POD0000001256_S0000303.wav" type="audio/mpeg" /></audio></td>
+      <td style="text-align: center"><audio controls=""><source src="./userstudy/4/POD0000001256_S0000303.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: left"><b>Expressing angry</b> in the domain of news and politics, an old male with a normal pitch and energy <b>speaks rapidly</b>.</td>
       <td style="text-align: left">says an <b>angry adult male </b>with normal pitch and volume, speaking at a <b>fast pace</b>. This conversation takes place in the context of News and Politics.</td>
     </tr>
   </tbody>
 </table>
-
 <div class="site-footer-item">
   <a href="#top">Back To Top</a>
 </div>
+</div>
+<!-- 修改 -->
+<main id="content" class="main-content" role="main">
+
+
+
 
 
       <footer class="site-footer">
