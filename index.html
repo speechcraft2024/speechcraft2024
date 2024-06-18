@@ -49,6 +49,14 @@
 .topic {
   background-color: #A3E584; /* 设置背景颜色为黄色 */
   } 
+.new-indicator {
+    font-weight: bold;
+    color: red;
+    background-color: yellow;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+  }
 </style>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -84,6 +92,7 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
 
 <p>We are planning to open source SpeechCraft, making it the largest natural language stylistic dataset that encompass the most fine-grained attributes and most diverse natural language descriptions available.</p>
 
+<p><span class="new-indicator">new update</span> Download SpeechCraft English descriprtions from <a href="https://github.com/speechcraft2024/speechcraft2024/blob/gh-pages/speechcraft_sample_10k.txt" download="speechcraft.txt">Here</a>. Currently we only uploaded 10k random samples due to the restriction of GitHub's file size limit.</p>
 
 
 <h2 id="top">Contents in the Demo Webpage</h2>
@@ -104,7 +113,7 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
           </ol>
       <li><a href= "#2-experimental-results">Experimental Results: Enhancing Speech-Related Tasks with the <b>SpeechCraft</b> Dataset</a></li>
           <ol>
-              <li><a href= "#21-experimental-results-for-expressive-speech-synthesis">Expressive Speech Synthesis</a> <i style="color: rgb(255, 0, 0);">(ref Sec. 5.1)</i></li>
+              <li><span class="new-indicator">new update</span><a href= "#21-experimental-results-for-expressive-speech-synthesis">Expressive Speech Synthesis</a> <i style="color: rgb(255, 0, 0);">(ref Sec. 5.1)</i></li>
               <li><a href= "#22-experimental-results-for-fine-grained-speech-emphasis-control">Fine-Grained Speech Emphasis Control</a> <i style="color: rgb(255, 0, 0);">(ref Sec. 5.2)</i></li>
               <li><a href= "#23-experimental-results-for-automated-speech-style-captioning">Automated Speech Style Captioning </a><i style="color: rgb(255, 0, 0);">(ref Sec. 5.3)</i></li>
           </ol>
@@ -405,42 +414,65 @@ It encompasses over <b>2,000,000</b> audio clips annotated with two versions of 
       <td style="text-align: center"><audio controls=""><source src="./userstudy/5/08_decompressed.wav" type="audio/mpeg" /></audio></td>
       <td style="text-align: center"><audio controls=""><source src="./userstudy/5/008.wav" type="audio/mpeg" /></audio></td>
     </tr>
-    <tr>
-      <td style="text-align: left">In the context of News and Politics, a <b>calm youth female</b> with normal pitch and high energy describes the details of Felix Sater’s forty million dollars pump-and-dump scheme and his cooperation with the government, highlighting their confidential nature.</td>
-      <td style="text-align: left">Like, everything you just heard about felix sater’s forty million dollars pump-and-dump scheme and his cooperation with the government goes into a vault.</td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0001.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><b>Surprised</b> by the information, an adult male with normal pitch and energy speaks rapidly, exclaiming. His <b>fast speech</b> reflects his astonishment. In the context of Crime, he expresses his surprise.</td>
-      <td style="text-align: left">Oh, wow! What, what age did that start?</td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383 (1).wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">In the midst of a calm and composed atmosphere of Sports, an <b>old male</b> with high pitch and high energy <b>speaks slowly</b>, highlighting the profound emphasis placed on family before the commencement of a race.</td>
-      <td style="text-align: left">You see just how much he was thinking about family before the start of this race.</td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0008.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">In a <b>somber</b> tone, an adult male with normal pitch and energy <b>speaks slowly</b> about the snow piling up on the streets.</td>
-      <td style="text-align: left">The snow was piling waist high upon the streets.</td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0012.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">With a low pitch and <b>high energy</b>, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his <b>joy and excitement</b>. This falls under the category of Education.</td>
-      <td style="text-align: left">He was blowing excitedly and running his fingers through his hair.</td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0017.wav" type="audio/mpeg" /></audio></td>
-      <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
-    </tr>
   </tbody>
 </table>
 <div class="site-footer-item">
   <a href="#top">Back To Top</a>
 </div>
 </div>
+<div class="table-content">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Style Prompt</th>
+        <th style="text-align: center">Transcript</th>
+        <th style="text-align: center">Salle Synthezied Speech <br>(Trained on TextrolSpeech Dataset)</th>
+        <th style="text-align: center">Salle Synthezied Speech <br>(Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i>)</th>
+        <th style="text-align: center"><span class="new-indicator">new update</span><br>Parler-TTS Synthezied Speech <br>(Trained on <u style="color: rgb(221, 0, 0);">speech-Descriptions</u><i class="fa-regular fa-star"></i>)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">In the context of News and Politics, a <b>calm youth female</b> with normal pitch and high energy describes the details of Felix Sater’s forty million dollars pump-and-dump scheme and his cooperation with the government, highlighting their confidential nature.</td>
+        <td style="text-align: left">Like, everything you just heard about felix sater’s forty million dollars pump-and-dump scheme and his cooperation with the government goes into a vault.</td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0001.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/6_POD0000003712_S0000072.wav" type="audio/mpeg" /></audio></td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><b>Surprised</b> by the information, an adult male with normal pitch and energy speaks rapidly, exclaiming. His <b>fast speech</b> reflects his astonishment. In the context of Crime, he expresses his surprise.</td>
+        <td style="text-align: left">Oh, wow! What, what age did that start?</td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383 (1).wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/7_POD0000005660_S0000383.wav" type="audio/mpeg" /></audio></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">In the midst of a calm and composed atmosphere of Sports, an <b>old male</b> with high pitch and high energy <b>speaks slowly</b>, highlighting the profound emphasis placed on family before the commencement of a race.</td>
+        <td style="text-align: left">You see just how much he was thinking about family before the start of this race.</td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0008.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/7_YOU0000001651_S0000741.wav" type="audio/mpeg" /></audio></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">In a <b>somber</b> tone, an <b>adult male</b> with normal pitch and energy speaks slowly about the snow piling up on the streets.</td>
+        <td style="text-align: left">The snow was piling waist high upon the streets.</td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0012.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/7_AUD0000000378_S0001201.wav" type="audio/mpeg" /></audio></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">With a low pitch and <b>high energy</b>, a happy adult male enjoying an educational moment exclaimed. His words were spoken at a slow pace, expressing his <b>joy and excitement</b>. This falls under the category of Education.</td>
+        <td style="text-align: left">He was blowing excitedly and running his fingers through his hair.</td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/0017.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
+        <td style="text-align: center"><audio controls=""><source src="./userstudy/3/7_YOU0000000171_S0000745.wav" type="audio/mpeg" /></audio></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="site-footer-item">
+    <a href="#top">Back To Top</a>
+  </div>
+  </div>
 <!-- 修改 -->
 <main id="content" class="main-content" role="main">
 
